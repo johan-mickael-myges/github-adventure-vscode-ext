@@ -13,10 +13,14 @@ export function activate(context: vscode.ExtensionContext) {
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with registerCommand
 	// The commandId parameter must match the command field in package.json
-	let disposable = vscode.commands.registerCommand('githubadventure.helloWorld', () => {
-		// The code you place here will be executed every time your command is executed
-		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from githubAdventure!');
+	let disposable = vscode.commands.registerCommand('githubadventure.go', () => {
+		// Open a modal with buttons
+		vscode.window.showInformationMessage('Welcome to the GitHub Adventure! 🚀', 'Start Adventure', 'Cancel').then((selection) => {
+			if (selection === 'Start Adventure') {
+				// Open the GitHub Adventure page
+				vscode.env.openExternal(vscode.Uri.parse('https://play.workadventu.re/_/hpez01wdr5f/localhost:8877/map/aHR0cHM6Ly9naXRodWIuY29tL3dvcmthZHZlbnR1cmUvc2NyaXB0aW5nLWFwaS1leHRyYQ=='));
+			}
+		});
 	});
 
 	context.subscriptions.push(disposable);
