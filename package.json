@@ -14,8 +14,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "githubadventure.helloWorld",
-        "title": "Hello World"
+        "command": "githubadventure.go",
+        "title": "Github Adventure"
       }
     ]
   },
