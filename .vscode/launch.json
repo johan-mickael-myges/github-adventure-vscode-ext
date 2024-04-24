@@ -6,6 +6,11 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
+			"env": {
+				"GIT_ADVENTURE_MAP_HOST": "http://localhost:3000",
+				"GIT_ADVENTURE_MAP_API_HOST": "localhost:8877",
+				"WA_HOST": "https://play.workadventu.re",
+			},
 			"name": "Run Extension",
 			"type": "extensionHost",
 			"request": "launch",
