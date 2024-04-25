@@ -38,7 +38,7 @@ const NO = 'NO';
 async function goToGithubAdventureHomeCTA(message = 'You are not in a Git repository. Would you like to open the GitHub Adventure homepage to access a remote git repository ?') {
     vscode.window.showWarningMessage(message, YES, NO).then((selection) => {
         if (selection === YES) {
-            vscode.env.openExternal(vscode.Uri.parse(process.env.GIT_ADVENTURE_MAP_HOST || process.env.WA_HOST || 'https://play.workadventu.re'));
+            vscode.env.openExternal(vscode.Uri.parse(process.env.GIT_ADVENTURE_MAP_HOST || process.env.WA_HOST || 'http://localhost:5173'));
         }
     });
 }
@@ -103,7 +103,7 @@ function activate(context) {
                 return;
             }
             gitUrl = btoa(gitUrl);
-            let mapUrl = `${process.env.WA_HOST}/_/${gitUrl}/${process.env.GIT_ADVENTURE_MAP_API_HOST || '-'}/map/${gitUrl}`;
+            let mapUrl = `${process.env.WA_HOST || 'https://play.workadventu.re'}/_/${gitUrl}/${process.env.GIT_ADVENTURE_MAP_API_HOST || 'localhost:8877'}/map/${gitUrl}`;
             await goToGithubAdventureMapCTA(mapUrl);
         });
     });
