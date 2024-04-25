@@ -1,18 +1,18 @@
 "use strict";
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function (o, m, k, k2) {
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     var desc = Object.getOwnPropertyDescriptor(m, k);
     if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
-        desc = { enumerable: true, get: function () { return m[k]; } };
+      desc = { enumerable: true, get: function() { return m[k]; } };
     }
     Object.defineProperty(o, k2, desc);
-}) : (function (o, m, k, k2) {
+}) : (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     o[k2] = m[k];
 }));
-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function (o, v) {
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
     Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function (o, v) {
+}) : function(o, v) {
     o["default"] = v;
 });
 var __importStar = (this && this.__importStar) || function (mod) {
@@ -38,7 +38,7 @@ function activate(context) {
     // The commandId parameter must match the command field in package.json
     let disposable = vscode.commands.registerCommand('githubadventure.go', () => {
         // Open a modal with buttons
-        vscode.window.showInformationMessage('Welcome to the GitHub Adventure! 🚀', 'Start Adventure').then((selection) => {
+        vscode.window.showInformationMessage('Welcome to the GitHub Adventure! 🚀', 'Start Adventure', 'Cancel').then((selection) => {
             if (selection === 'Start Adventure') {
                 // Open the GitHub Adventure page
                 vscode.env.openExternal(vscode.Uri.parse('https://play.workadventu.re/_/hpez01wdr5f/localhost:8877/map/aHR0cHM6Ly9naXRodWIuY29tL3dvcmthZHZlbnR1cmUvc2NyaXB0aW5nLWFwaS1leHRyYQ=='));
