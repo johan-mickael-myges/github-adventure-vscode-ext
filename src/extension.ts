@@ -111,7 +111,7 @@ export function activate(context: vscode.ExtensionContext) {
 			}
 
 			gitUrl = btoa(gitUrl);
-			let mapUrl = `${process.env.WA_HOST || 'https://play.workadventu.re'}/_/${gitUrl}/${process.env.GIT_ADVENTURE_MAP_API_HOST || 'localhost:8877'}/map/${gitUrl}`;
+			let mapUrl = `${process.env.WA_HOST || 'https://play.workadventu.re'}/_/${gitUrl}/${process.env.GIT_ADVENTURE_MAP_API_HOST || 'localhost:8877'}/${gitUrl}`;
 			await goToGithubAdventureMapCTA(mapUrl);
 		});
 	});

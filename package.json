@@ -3,7 +3,7 @@
   "icon": "images/logo.png",
   "displayName": "githubAdventure",
   "description": "Extension to open github adventure map",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "publisher": "JohanMickael",
   "repository": {
     "type": "git",
