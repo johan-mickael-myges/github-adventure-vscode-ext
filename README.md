@@ -10,7 +10,15 @@ This minimal extension allows you to directly access to workadventure world base
 
 ![Images](images/desc.gif)
 
-## Getting Started
+## Usage
+
+1. Download the extension from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=JohanMickael.githubadventure).
+2. ⚠️ Start The GithubAdventure API project. (Locally) [API](https://github.com/johan-mickael-myges/github-map)
+3. Open a Git repository in Visual Studio Code.
+3. Press `F1` to open the command palette.
+4. Type `GitHub Adventure` and select the command to start the adventure.
+
+## Getting Started (When developing)
 
 1. Clone this repository.
 2. Run `npm install` to install all the necessary dependencies.
