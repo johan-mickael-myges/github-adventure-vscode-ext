@@ -2,11 +2,13 @@
 
 ## Features
 
-This minimal extension allows you to directly access to workadventure world based on a github (remote/local) repository
+This minimal extension allows you to directly access to workadventure world based on a local github project.
 
 - **Start Adventure**: This feature welcomes you to the GitHub Adventure and provides an option to start the adventure. If you choose to start, it will open the adventure map in your default browser.
 
 - **Open GitHub Adventure Homepage**: If you're not in a Git repository, this feature offers to open the GitHub Adventure homepage for you to access a remote Git repository.
+
+![Images](images/desc.gif)
 
 ## Getting Started
 
@@ -27,8 +29,19 @@ These variables are defined in the `.env` file. When adding new variables, make 
 
 ## Requirements
 
-No requirements needed.
+You must be able to run this project locally.
+
+[GithubAdventure API: https://github.com/johan-mickael-myges/github-map](https://github.com/johan-mickael-myges/github-map)
+
+## Known Issues
+
+This extension only works with the GithubAdventure API running locally.
+> You have to start the GithubAdventure API project in order to generate the dynamic maps. 
+
+***Yeah, sorry, we do not have time to deploy the API on a server. But in another versions maybe ? ***
+
+### Thanks
+Thanks to the [WorkAdventure](https://workadventu.re/) team for allowing us to use their platform to create this extension.
+This project is for educational purposes only.
 
 **Enjoy!**
-
-# github-adventure-vscode-ext

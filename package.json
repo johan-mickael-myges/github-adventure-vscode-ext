@@ -1,9 +1,14 @@
 {
   "name": "githubadventure",
+  "icon": "images/logo.png",
   "displayName": "githubAdventure",
   "description": "Extension to open github adventure map",
-  "version": "0.0.1",
+  "version": "0.0.13",
   "publisher": "JohanMickael",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johan-mickael-myges/github-adventure-vscode-ext"
+  },
   "engines": {
     "vscode": "^1.88.0"
   },
